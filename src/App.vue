@@ -2,10 +2,6 @@
   <div class="app">
     <Menu></Menu>
     <Card></Card>
-    <router-link to="/">Home</router-link>
-    <router-link to="/detail">Detail</router-link>
-    <router-link to="/add">Add</router-link>
-    <router-view></router-view>
   </div>
 </template>
 
@@ -22,6 +18,8 @@ export default {
 </script>
 
 <style>
+@import './assets/icofont/icofont.min.css';
+
 html{
   height: 100%;
 }

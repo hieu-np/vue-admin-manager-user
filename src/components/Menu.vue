@@ -1,5 +1,5 @@
 <template>
-  <nav class="navbar navbar-dark navbar-expand-lg menu-color">
+  <nav class="navbar navbar-white navbar-expand-lg menu-color">
     <div class="container-fluid">
       <router-link class="navbar-brand fw-bold" to="/">User Manager</router-link>
       <button
@@ -16,13 +16,13 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <routerLink :class="[homePage === 0 ? 'active' : '', 'nav-link fw-bold']" aria-current="page" to="/">Dashboard</routerLink>
+            <routerLink :class="[homePage === 0 ? 'text-white' : '', 'nav-link fw-bold']" aria-current="page" to="/">Dashboard</routerLink>
           </li>
           <li class="nav-item">
-            <routerLink :class="[homePage === 1 ? 'active' : '', 'nav-link fw-bold']" to="/add">Add User</routerLink>
+            <routerLink :class="[homePage === 1 ? 'text-white' : '', 'nav-link fw-bold']" to="/add">Add User</routerLink>
           </li>
           <li class="nav-item">
-            <a :class="[homePage === 2 ? 'active' : '', 'nav-link fw-bold disble']"> Detail & Edit</a>
+            <a :class="[homePage === 2 ? 'text-white' : '', 'nav-link fw-bold disble']"> Detail & Edit</a>
           </li>
          
         </ul>
@@ -50,7 +50,7 @@ export default {
 
 <style>
 .menu-color{
-  background-color: rgba(13,110,253, 0.4);
+  background-color: rgba(13,110,253, 0.3);
   /* border-bottom: solid rgba(13,110,253, 0.4) 1px; */
   /* box-shadow: 5px 5px 10px#888888; */
 }
